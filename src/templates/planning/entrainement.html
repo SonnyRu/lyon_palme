@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="{% static 'main/css/style.css' %}" />
+        <link rel="icon"href="{% static 'favicon.ico' %}">
+        <title>LyonPalme - {{ entrainement.Titre }}</title>
+    </head>
+    <body>
+        <h1>{{ entrainement.Titre }}</h1>
+        <div class="form">
+            <form action method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" name="Modifier" value="Modifier">
+            </form>
+        </div>
+    </body>
+</html>

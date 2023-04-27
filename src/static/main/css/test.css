@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Kaushan+Script&family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.logo {
+    text-align: center;
+}
+
+
+#container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.7), #9b6bbb), url("https://www.costarica-voyage.com/wp-content/uploads/sebastian-pena-lambarri-7i5hmcgupvw-unsplash.jpg");
+    background-size: cover;
+}
+
+.container-text {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-text h1 {
+    color: #fff;
+    font-size: 70px;
+    text-transform: capitalize;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.container-text a {
+    color: #fff;
+    text-decoration: 0;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.container-text a:hover {
+    letter-spacing: 1px;
+    background-color: #fff;
+    color: #9b6bbb;
+    transform: scale(1.05);
+}

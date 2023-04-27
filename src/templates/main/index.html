@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="{% static 'main/css/test.css' %}" />
+        <link rel="icon"href="{% static 'favicon.ico' %}">
+        <title>LyonPalme - Accueil</title>
+    </head>
+    <body>
+        <section id="container">
+            <div class="logo"><img src="{% static 'planning/images/Untitled.png' %}" height="73px"></div>
+            <div class="container-text">
+                <h1 class="feur" title="Félicitations! Tu es gay!">Bienvenu à l'écran de titre !</h1>
+                <a href="{% url 'indexApp' %}">Accéder à l'application</a>
+            </div>
+        </section>
+    </body>
+</html>
