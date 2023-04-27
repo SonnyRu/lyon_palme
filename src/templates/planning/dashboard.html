@@ -1,0 +1,21 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="{% static 'main/css/style.css' %}" />
+        <link rel="icon"href="{% static 'favicon.ico' %}">
+        <title>LyonPalme - Dashboard</title>
+    </head>
+    <body>
+        <h1>Dashboard</h1>
+        <p>
+            <a href="{% url 'create_entrainement' %}"><button>Créer un nouvel entraînement</button></a>
+        </p>
+        <div class="entrainement">
+            <form action method="POST">
+                {% for entrainement in entrainements %}
+                    <p>{{ entrainement.Titre }} <a href="entrainement/{{ entrainement.Titre }}">Modifier</a> <a href="entrainement/delete/{{ entrainement.Titre }}">Supprimer</a></p>
+                {% endfor %}
+            </form>
+        </div>
+</html>
