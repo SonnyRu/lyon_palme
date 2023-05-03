@@ -1,1 +1,1 @@
-web: gunicorn lyon_palme.wsgi --log-file -
+web: gunicorn main.wsgi --log-file -
