@@ -1,3 +1,1 @@
-web: gunicorn main.wsgi --log-file -
-
-scalingo --app main scale worker:3:2XL
+web: gunicorn lyon_palme.wsgi --log-file -
